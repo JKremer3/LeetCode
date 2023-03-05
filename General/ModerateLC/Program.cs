@@ -9,6 +9,12 @@ namespace ModerateLC
             Console.WriteLine("Hello World!");
             var intList = new int[]{1,2,3,4};
             runRemoveNthNode(intList, 2);
+            
+            var needle = "a";
+            var haystack = "a";
+            var needleLoc = NeedleHaystack.NeedleHaystackKMP(needle, haystack);
+            //var needleLoc = NeedleHaystack.NeedleHaystackWithStringMethods(needle, haystack);
+            Console.WriteLine("Needle " + needle + " in haystack " + haystack + " found at index : " + needleLoc);
         }
 
         static void runRemoveNthNode(int[] nodeList, int n)
